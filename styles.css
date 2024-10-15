@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('fluffy-persian-cat.jpg'); /* Imagem de fundo */
+    background-size: cover; /* A imagem cobrirá toda a tela */
+    background-position: center; /* Centraliza a imagem no fundo */
+    background-attachment: fixed; /* Fixa o fundo ao rolar a página */
+    color: #333;
+}
+
+.container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.85); /* Fundo branco com transparência */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #d62839;
+    font-size: 2.2em;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #555;
+    font-size: 1em;
+}
+
+.imagem-container {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.imagem-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.texto-amoroso {
+    margin: 15px 0;
+}
+
+.texto-amoroso h2 {
+    color: #1d3557;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #d62839;
+    padding-bottom: 5px;
+}
+
+.texto-amoroso p {
+    line-height: 1.6;
+    font-size: 1em;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    .texto-amoroso h2 {
+        font-size: 1.4em;
+    }
+    .texto-amoroso p {
+        font-size: 0.9em;
+    }
+}

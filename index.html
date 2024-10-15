@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surpresa para Você</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .video-container {
+            width: 100%;
+            max-width: 560px; /* Largura máxima do vídeo */
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 315px; /* Altura fixa do vídeo */
+        }
+
+        .heart {
+            position: relative;
+            width: 100px; /* Largura do coração */
+            height: 100px; /* Altura do coração */
+            background-color: #ff6b6b;
+            transform: rotate(-45deg);
+            cursor: pointer;
+            transition: transform 0.2s;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .heart:before,
+        .heart:after {
+            content: '';
+            position: absolute;
+            width: 100px; /* Largura dos círculos */
+            height: 100px; /* Altura dos círculos */
+            border-radius: 50%; /* Círculo perfeito */
+            background: #ff6b6b;
+        }
+
+        .heart:before {
+            top: -50px; /* Círculo superior */
+            left: 0;
+        }
+
+        .heart:after {
+            left: 50px; /* Círculo direito */
+            top: 0;
+        }
+
+        .heart:hover {
+            transform: scale(1.1); /* Efeito de hover no coração */
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 24px; /* Tamanho da fonte em telas pequenas */
+            }
+
+            .heart {
+                width: 80px; /* Ajuste para telas menores */
+                height: 80px; /* Ajuste para telas menores */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Ops, tem uma mensagem de vídeo para você!</h1>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/O1yhzjUKW-8" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <p>Após assistir, clique no coração abaixo para continuar.</p>
+    <div class="heart" onclick="openPage()"></div>
+
+    <script>
+        function openPage() {
+            // Função para redirecionar para a página de destino
+            window.location.href = "surpresa.index.html"; // Altere para a URL desejada
+        }
+    </script>
+</body>
+</html>
